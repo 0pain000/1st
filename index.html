@@ -4,11 +4,8 @@
 </head>
 <body>
   <a-scene embedded arjs>
-    <a-assets>
-            <a-asset-item id="crown" src="https://raw.githubusercontent.com/0pain000/1st/main/gltf/scene.gltf"></a-asset-item>
-        </a-assets>
     <a-marker preset="hiro">
-      <a-gltf-model src="crown"></a-gltf-model>
+      <a-entity gltf-model="src:url(https://raw.githubusercontent.com/0pain000/1st/main/gltf/scene.gltf)"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
