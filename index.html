@@ -4,9 +4,11 @@
 </head>
 <body>
   <a-scene embedded arjs>
+    <a-assets>
+            <a-asset-item id="crown" src="https://raw.githubusercontent.com/0pain000/1st/main/gltf/scene.gltf"></a-asset-item>
+        </a-assets>
     <a-marker preset="hiro">
-      <a-entity  gltf-model-next="https://clara.io/embed/378aae56-79d3-404c-9c5e-b1432d916ade"><!-- https://raw.githubusercontent.com/0pain000/1st/main/gltf/scene.gltf);" scale="0.1 0.1 0.1 -->
-      </a-entity>
+      <a-gltf-model src="crown"></a-gltf-model>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
